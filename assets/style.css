@@ -1,11 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600;700;800;900&family=Work+Sans:wght@100;200;300;400;500;600;700;800;900&display=swap');
-
 :root{
     --primary: #0F1E54;
     --primary75: #4B577F;
     --secondary: #567AFB;
+    --background: #ECF5FF;
 }
-
 *{
     box-sizing: border-box;
     margin:0;
@@ -14,13 +13,14 @@
 body{
     width: 100vw;
     height: 100vh;
-    background-color: #ECF5FF;
+    background-color: var(--background);
     display: flex;
 }
 main{
     width: 100%;
 }
-
+/* HEADER */
+/* HEADER */
 /* HEADER */
 header{
     background-color: #fff;
@@ -50,6 +50,7 @@ nav a:hover{
 nav a.here{
     color: var(--primary);
     font-weight: 600;
+    /* line-height: 40rem; */
     border-bottom: solid 2px var(--secondary);
 }
 header img{
@@ -57,7 +58,8 @@ header img{
     width: 35px;
     border-radius: 25px;
 }
-
+/* TABLE */
+/* TABLE */
 /* TABLE */
 table{
     font-family: 'Work Sans', sans-serif;
@@ -74,6 +76,7 @@ tr, th, td{
 tr, td{
     color: var(--primary75);
 }
+/* Table header */
 th{
     background-color: #C6D9EE;
     color: var(--primary);
@@ -89,13 +92,7 @@ th:last-child{
     border-radius: 0 8px 0 0;
     text-align: center;
 }
-td:first-child{
-    min-width: none;
-    width: auto;
-}
-td:last-child{
-    text-align: center;
-}
+/* Table content */
 td:nth-child(2){
     color: var(--primary);
     font-weight: 500;
@@ -103,10 +100,22 @@ td:nth-child(2){
 tr:nth-child(odd){
     background-color: #FAFCFF;
 }
+tr:first-child{
+    background-color: var(--background);
+}
+/* Avatar */
+td:first-child{
+    min-width: none;
+    width: auto;
+}
 td img{
     height: 48px;
     width: 48px;
     border-radius: 50px;
+}
+/* Status */
+td:last-child{
+    text-align: center;
 }
 td span{
     border-radius: 10px;
@@ -116,7 +125,8 @@ td span.active{
     color:#369F34;
     background-color: #D2FFD2;
 }
-
+/* SIDE MENU */
+/* SIDE MENU */
 /* SIDE MENU */
 aside{
     font-family: 'Poppins', sans-serif;
